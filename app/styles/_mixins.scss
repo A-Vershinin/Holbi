@@ -155,7 +155,8 @@
   max-width: $desktop-max-widths; //1200
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 1.25%; //30
+  // padding: 0 1.25%; //30
+  padding: 0; //30
   @media screen and #{($laptop-point-widths-des)}{
     max-width: $laptop-max-widths;
   }

@@ -1,3 +1,95 @@
 footer.footer
   .container
-      span.footer__copyright Yeoman c 2017 . your copy right here
+    .footer__top
+      .footer__column
+        .footer__block
+          h3.footer__title About
+          ul.footer-list
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |About Holbi
+        .footer__block
+          h3.footer__title Our offers
+          ul.footer-list
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |What's new
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Recommends
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Sale
+      .footer__column
+        .footer__block
+          h3.footer__title Help
+          ul.footer-list
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Help
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |FAQ
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Terms &amp; Conditions
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Privacy Policy
+            li.footer-list__item 
+              a(href="#").footer-list__link
+                i(aria-hidden="true").fa.fa-angle-right 
+                |Delivery Info
+      .footer__column
+        .footer__block
+          h3.footer__title Contact us
+          ul.footer-list.footer-list--contacts
+            li.footer-list__item 
+              a(href="mailto:info@holbi.co.uk").footer-list__link
+                i(aria-hidden="true").fa.fa-envelope-o 
+                |info@holbi.co.uk
+            li.footer-list__item.footer-list__item--light
+              a(href="tel:08703836587").footer-list__link 
+                i(aria-hidden="true").fa.fa-fax
+                |0870 3836587
+            li.footer-list__item.footer-list__item--light
+              a(href="tel:08000112569").footer-list__link
+                i(aria-hidden="true").fa.fa-phone 
+                |0800 0112569
+            li.footer-list__item.footer-list__item--light
+              i(aria-hidden="true").fa.fa-map-marker 
+              span Paradise Farm, High street, 
+                br
+                |Kempsford, Fariford. 
+                br
+                |GL7 4EU, United Kingdom 
+                br
+      .footer__column
+        .footer__block
+          .footer__block-inner
+            h3.footer__title Payment
+            a(href="").footer__pay
+              picture
+                img(src="img/decor/pay@1x.jpg", srcset="img/decor/pay@2x.jpg 2x"
+                  width="196" height="70" alt="Pay" )
+            a(href="").footer__paypal
+              picture
+                img(src="img/decor/paypal@1x.png", srcset="img/decor/paypal@2x.png 2x"
+                  width="196" height="48" alt="Pay")
+          .footer__touch
+            h4.footer__touch-title Keep in touch
+            include ../common/_socials.pug
+    .footer__bottom
+      .footer__copyright Copyright &copy; 2017 Holbi Group LTD.All rights reserved.
+      .footer__eCommerce 
+        |eCommerce development by
+        |
+        a(href="#") Holbi

@@ -18,10 +18,10 @@ module.exports = function() {
         noCache: true,
         outputStyle: 'expanded'
       }))
-      .pipe($.gp.cssunit({
-        type :'px-to-rem',
-      	rootSize : 16
-      }))
+      // .pipe($.gp.cssunit({
+      //   type :'px-to-rem',
+      // 	rootSize : 16
+      // }))
       .pipe($.gp.autoprefixer({
         browsers: $.config.autoprefixerConfig
       }))

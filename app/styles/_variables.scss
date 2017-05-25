@@ -1,7 +1,8 @@
 //Переменные//
 //Шрифты//
-$harmoniaSansProCyr: "HarmoniaSansProCyr", "Arial", sans-serif;
-$HarmoniaSansProCyr-Black: "HarmoniaSansProCyr-Black", "Arial", sans-serif;
+$font-base: "PT Sans", "Arial", sans-serif;
+$Poppins: "Poppins", "Arial", sans-serif;
+$PT-Serif: "PT Serif", "Arial", sans-serif;
 
 //Цвета, фон//
 $accent: #ff5912;
@@ -49,14 +50,14 @@ $desktop-point-widths: "(min-width: 1200px)";
 $laptop-point-widths: "(min-width: 992px)";
 $tablet-point-widths: "(min-width: 576px)";
 //Desktop//
-$desktop-point-widths-des: "(max-width: 1200px)";
-$laptop-point-widths-des: "(max-width: 992px)";
+$desktop-point-widths-des: "(max-width: 1600px)";
+$laptop-point-widths-des: "(max-width: 1200px)";
 $tablet-point-widths-des: "(max-width: 768px)";
 $phone-point-widths-des: "(max-width: 576px)";
 
 //макс-ширина на устройствах//
-$desktop-max-widths: 1170px;
-$laptop-max-widths: 992px;
+$desktop-max-widths: 1580px;
+$laptop-max-widths: 1170px;
 $tablet-max-widths: 768px;
 $phone-max-widths: 480px;
 
