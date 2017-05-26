@@ -1,0 +1,64 @@
+.user {
+	position: relative;
+}
+.user .dropdown-toggle {
+	position: relative;
+	display: block;
+	padding: 0;
+	color: $accent;
+	font-size: 0;
+	text-decoration: none;
+	&:hover {
+		color: $accent-active;
+		.caret {
+			color: $accent;
+		}
+		.user__text {
+			color: #616161;
+		}
+	}
+}
+.user .user__text {
+	display: block;
+	padding: rem(8.5px) 0;
+	padding-left: rem(48px);
+	padding-right: rem(30px);
+	font-family: $font-base;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 700;
+	color: $accent;
+	white-space: nowrap;
+}
+.user	.flag {
+	position: absolute;
+	z-index: 30;
+	left: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 400;
+}
+.user .caret {
+	position: absolute;
+	z-index: 30;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+	border-width: 6px;
+	color: #616161;
+}
+.user .dropdown-menu {
+	min-width: auto;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	& a {
+		display: block;
+		padding: rem(10px) rem(25px);
+		font-size: 1rem;
+		font-family: $font-base;
+		color: $accent;
+	}
+}

@@ -118,6 +118,11 @@
   .selector {
   }
 }
+//перевод в %
+@function inter($width, $parent) {
+  // @return $px/$font-size-base + 0rem;
+  @return ($width/$parent) * 100%;
+}
 @mixin font-size-base {
   @media screen and #{($desktop-point-widths-des)} {
     font-size: $font-size-desktop;

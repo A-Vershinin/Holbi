@@ -8,6 +8,8 @@
   ],
   "devDependencies": {
     "normalize-css": "^5.0.0",
-    "picturefill": "^3.0.2"
+    "picturefill": "^3.0.2",
+    "jQuery": "^3.2.1",
+    "bootstrap": "^3.3.7"
   }
 }

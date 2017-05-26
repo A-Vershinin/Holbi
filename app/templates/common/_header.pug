@@ -1,4 +1,92 @@
 header.header
   .container
     .header__top
-      |  Header
+      .header__logo
+        include ../common/_logo.pug
+      .header__addition
+        .header__addition-top
+          include ../common/_search.pug
+          .user
+            a(href="#" data-toggle="dropdown").dropdown-toggle#dropdownMenu1
+              span.flag
+                i(aria-hidden="true").fa.fa-user
+              .user__text My Account 
+              span.caret
+            ul(aria-labelledby="dropdownMenu1").dropdown-menu
+              li
+                a(href="#") My Account
+              li
+                a(href="#") My profile
+              li
+                a(href="#") My Address
+          .language
+            a(href="#" data-toggle="dropdown").dropdown-toggle#dropdownMenu2
+              span.flag
+                img(src="img/decor/flag1@1x.png" width="28" 
+                  height="18" alt="english-icon").dropdown-flag
+                  
+              |English 
+              span.caret
+            ul(aria-labelledby="dropdownMenu2").dropdown-menu
+              li
+                a(href="#") 
+                  .language__img
+                    picture
+                      img(src="img/decor/flag1@1x.png", srcset="img/decor/flag1@2x.png 2x"
+                        alt="GBR")
+                  .language__text English
+              li
+                a(href="#")
+                  .language__img
+                    picture
+                      img(src="img/decor/flag1@1x.png", srcset="img/decor/flag1@2x.png 2x"
+                        alt="GBR") 
+                  .language__text Russian
+          .currency
+            a(href="#" data-toggle="dropdown").dropdown-toggle#dropdownMenu3
+              span.flag
+                i(aria-hidden="true").fa.fa-gbp
+              .currency__text GBP
+              span.caret
+            ul(aria-labelledby="dropdownMenu3").dropdown-menu
+              li
+                a(href="#") 
+                  i(aria-hidden="true").fa.fa-gbp 
+                  |GBP
+              li
+                a(href="#") 
+                  i(aria-hidden="true").fa.fa-usd 
+                  |USD
+        .header__addition-bottom
+          ul.contacts
+            li.contacts__item
+              .contacts__icon
+                i(aria-hidden="true").fa.fa-phone
+              .contacts__link-text
+                span.contacts__link-title Sales Office
+                a(href="tel:08000112569").contacts__link 0800 011 2569
+            li.contacts__item
+              .contacts__icon
+                i(aria-hidden="true").fa.fa-fax
+              .contacts__link-text
+                span.contacts__link-title Fax us
+                a(href="tel:08703836587").contacts__link 0870 3836587
+            li.contacts__item
+              .contacts__icon
+                i(aria-hidden="true").fa.fa-fax
+              .contacts__link-text
+                span.contacts__link-title Email us
+                a(href="mailto:info@holbi.co.uk").contacts__link info(at)holbi.co.uk
+      .header__action
+        .header__number
+          i(aria-hidden="true").fa.fa-shopping-cart
+          span 0
+        a(href="#").header__check
+          |Checkout
+          i(aria-hidden="true").fa.fa-arrow-right 
+    .header__middle
+      include ../common/_menu.pug
+    .header__bottom 
+      
+          
+        

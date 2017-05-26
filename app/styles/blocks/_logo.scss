@@ -1,14 +1,13 @@
 .logo {
   display: inline-block;
   vertical-align: top;
-  max-width: rem(120px);
-  max-height: rem(40px);
   overflow: hidden;
 }
 .logo__link {
   display: block;
-  width: rem(120px);
-  height: rem(40px);
   text-decoration: none;
   cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }

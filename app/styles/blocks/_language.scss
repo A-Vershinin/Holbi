@@ -1,0 +1,52 @@
+.language {
+	position: relative;
+}
+.language .dropdown-toggle {
+	display: block;
+	padding: 8.5px 0;
+	padding-left: rem(15px);
+	padding-right: rem(28px);
+	font-size: 0;
+	color: #616161;
+	&:hover {
+		color: $accent;
+	}
+}
+
+.language .flag {
+	display: block;
+	width: 28px;
+	height: 18px;
+	margin-right: 10px;
+}
+.language .caret {
+	position: absolute;
+	z-index: 30;
+	right: 7%;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	border-width: 6px;
+}
+.language .dropdown-menu {
+	 min-width: auto;
+	 padding: 0;
+	 border: 0;
+	 & a {
+		 display: block;
+		 padding: rem(10px) rem(20px);
+		 font-size: 0;
+	 }
+}
+.language__img {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+}
+
+.language__text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+	text-indent: -9999px;
+}
