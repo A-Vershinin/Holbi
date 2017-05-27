@@ -2,18 +2,19 @@
   position: relative;
   color: $gray-1;
   background-color: #fff;
-  background-color: rgba(#599111, 0.2);
+  // background-color: rgba(#599111, 0.2);
 }
 
 .header__top {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 .header__logo {
   display: inline-block;
   vertical-align: middle;
+  flex: 1 1 auto;
   max-width: 340px;
   max-height: 111px;
   width: inter(340, 1580); //340
@@ -35,6 +36,7 @@
   width: calc(100% - 151px - 340px);
   border-left: 1px solid #bdbdbd;
   box-sizing: border-box;
+  flex: 1 1 auto;
 }
 .header__action {
   width: inter(151, 1580); //151;
@@ -46,10 +48,13 @@
   }
 }
 .header__number {
+  // min-height: 61px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  padding-top: rem(14px);
+  justify-content: center;
+  flex: 1 1 auto;
+  // padding-top: rem(20px);
+  padding: rem(10px) 0;
   font-size: 0;
   line-height: 1;
   font-weight: 700;
@@ -117,6 +122,74 @@
   .currency {
     width: rem(100px);
     border: 0;
+  }
+}
+.header__middle {
+  margin-bottom: 22px;
+  background-color: #1256d1;
+  .menu {
+    min-height: auto;
+    border: 0;
+    margin: 0;
+  }
+}
+.header__bottom-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.header__rose {
+  position: relative;
+  min-height: 36px;
+  background-color: #fff;
+}
+.header__rose span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: #bdbdbd;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    z-index: 30;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #bdbdbd;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+  }
+}
+.header__rose-pict {
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  padding: 0 30px;
+  transform: translateX(-50%);
+  display: block;
+  width: 60px;
+  height: 36px;
+  margin-top: -18px;
+  background-color: #fff;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/decor/icon-rose@1x.png");
+    @extend %cover;
   }
 }
 

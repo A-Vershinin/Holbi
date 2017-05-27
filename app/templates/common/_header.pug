@@ -84,9 +84,29 @@ header.header
         a(href="#").header__check
           |Checkout
           i(aria-hidden="true").fa.fa-arrow-right 
-    .header__middle
+  .header__middle
+    .container
       include ../common/_menu.pug
-    .header__bottom 
-      
-          
+  .header__bottom 
+    .container
+      .header__bottom-inner
+        .banner
+          .banner__inner
+            .banner__icon
+              .banner__icon-text 
+            p.banner__text 10% Off
+              |
+              |
+              span on all titles 
+        .banner
+          .banner__inner
+            .banner__icon
+              .banner__icon-text.banner__icon-fa
+                  i(aria-hidden="true").fa.fa-truck    
+            p.banner__text    Free Delivery
+              span on orders over £20  
+      .header__rose
+        span
+          .header__rose-pict
+
         
