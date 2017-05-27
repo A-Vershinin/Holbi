@@ -2,7 +2,6 @@
   position: relative;
   color: $gray-1;
   background-color: #fff;
-  // background-color: rgba(#599111, 0.2);
 }
 
 .header__top {
@@ -29,7 +28,6 @@
     text-transform: uppercase;
     color: #1256d1;
     box-sizing: border-box;
-
   }
 }
 .header__addition {
@@ -48,12 +46,10 @@
   }
 }
 .header__number {
-  // min-height: 61px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   flex: 1 1 auto;
-  // padding-top: rem(20px);
   padding: rem(10px) 0;
   font-size: 0;
   line-height: 1;

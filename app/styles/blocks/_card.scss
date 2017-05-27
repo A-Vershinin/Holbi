@@ -1,0 +1,230 @@
+.card {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: 18px;
+	border: 1px solid #bdbdbd;
+	background-color: $light-1;
+
+}
+.card__img {
+	flex: 1 1 auto;
+	display: block;
+	width: 440px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.card__desc {
+	flex: 1 1 auto;
+	font-size: rem(18px);
+	line-height: rem(24px);
+	font-family: $font-base;
+	font-weight: 400;
+	color: #212121;
+}
+.card__title {
+	margin-bottom: rem(10px);
+	font-family: $Poppins;
+	font-weight: 600;
+	color: #1256d1;
+}
+.card__text {
+	margin-bottom: rem(17px);
+	line-height: rem(24px);
+
+}
+.card__status {
+	position: relative;
+	padding-top: rem(13px);
+	padding-bottom: rem(10px);
+	padding-left: rem(23px);
+	font-weight: 700;
+	border-bottom: 1px solid #bdbdbd;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 30;
+		display: block;
+		width: rem(15px);
+		height: rem(15px);
+		background-color: #00833c;
+		border-radius: 50%;
+	}
+}
+.card__price-block {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: rem(7px);
+	padding-bottom: rem(7px);
+	border-bottom: 1px solid #bdbdbd;
+}
+.card__price,
+.card__price-rrp {
+	font-family: $font-base;
+	font-weight: 700;
+	line-height: rem(30px);
+	span {
+		display: block;
+	}
+}
+.card__price-total {
+	font-size: rem(30px);
+}
+.card__price .card__price-total {
+	color: #cd0707;
+}
+.card__price-rrp span {
+	text-align: right;
+	color: #212121;
+}
+.card__price-you {
+	color: #212121;
+	font-size: rem(18px);
+}
+
+.card__more-info {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: rem(12px) 0;
+	color: #1256d1;
+	font-family: $font-base;
+	font-size: rem(18px);
+	font-weight: 700;
+	line-height: 1;
+	border-bottom: 1px solid #bdbdbd;
+}
+.card__more {}
+.card__more-link {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+.card__action {
+	padding-top: rem(16px);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.card__number {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: rem(130px);
+}
+.card__number-btn {
+	position: relative;
+	width: rem(35px);
+	height: rem(35px);
+	border-radius: 50%;
+	background-color:  #e0e0e0;
+	font-size: rem(24px);
+	line-height: 1;
+	cursor: pointer;
+}
+.card__number-btn-minus {
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: 30;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		display: block;
+		width: 9px;
+		height: 3px;
+		background-color: #bdbdbd;
+	}
+}
+.card__number-btn-plus {
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: 30;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		display: block;
+		width: 12px;
+		height: 3px;
+		background-color: $accent;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 30;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%) rotate(90deg);
+		display: block;
+		width: 12px;
+		height: 3px;
+		background-color: $accent;
+	}
+}
+.card__number-btn:hover {
+	background-color: $accent;
+	&.card__number-btn-plus {
+		&::before, &::after {
+			background-color: $light-1;
+		}
+	}
+}
+.card__input {
+	width: 100%;
+	max-width: rem(53px);
+	padding: 0 rem(3px);
+	color: #424242;
+	font-family: $font-base;
+	font-size: rem(16px);
+	line-height: rem(33px);
+	font-weight: 400;
+	border: 1px solid #bdbdbd;
+	border-radius: 0;
+	text-align: center;
+	outline: 0;
+	cursor: none;
+}
+
+.card__btn {
+	padding: rem(2px) 0;
+	padding-left: rem(19px);
+	padding-right: rem(25px);
+	font-size: rem(18px);
+	line-height: rem(28px);
+	font-weight: 700;
+	font-family: $PT-Serif;
+	text-decoration: none;
+	text-transform: none;
+	white-space: nowrap;
+
+	color: $light-1;
+	background-color: $accent;
+	border-radius: rem(25px);
+	.fa {
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 1;
+		margin-right: 8px;
+	}
+	&:hover {
+		text-decoration: none;
+		background-color: $accent-active;
+	}
+	&:active {
+		color: #212121;
+		border-color: #212121;
+	}
+	&:focus {
+		color: $light-1;
+		outline: 0;
+		text-decoration: none;
+	}
+}

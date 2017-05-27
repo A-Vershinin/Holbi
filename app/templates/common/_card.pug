@@ -1,0 +1,30 @@
+.card
+	a(href="#").card__img
+		picture
+			img(src="img/content/item1@1x.png", srcset="img/content/item1@2x.png 2x"
+				width="266" height="266" alt="logotype")
+	.card__desc
+		h4.card__title Casio Baby-G BG169G-7B Face Protector 
+		p.card__text This Baby-G BLX from the Tide Graph series 
+			|allows for maximum fun and function in the w...
+		.card__status In stock
+		.card__price-block
+			.card__price
+				span.card__price-you Your price:  
+				span.card__price-total £13.49  
+			.card__price-rrp
+				span.card__price-you RRP:  
+				span.card__price-total £14.99 
+		.card__more-info
+			.card__more More Info
+			a(href="#").card__more-link
+				i(aria-hidden="true").fa.fa-arrow-right 
+		.card__action
+			.card__number
+				.card__number-btn.card__number-btn-minus
+				input(type="text" name="number" placeholder="1").card__input#card__input
+				.card__number-btn.card__number-btn-plus
+			a(href="#").btn.card__btn 
+				i(aria-hidden="true").fa.fa-shopping-cart 
+				|Buy now
+				
