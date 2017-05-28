@@ -80,3 +80,19 @@
     line-height: 1;
   }
 }
+@media screen and #{($laptop-point-widths-des)} {
+
+}
+@media screen and #{($tablet-point-widths-des)} {
+  .banner__text {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__text {
+    font-size: 20px;
+  }
+}
+@media screen and #{($phone-point-widths-des)} {
+
+}

@@ -3,10 +3,12 @@
 }
 .user .dropdown-toggle {
 	position: relative;
-	display: block;
-	padding: 0;
-	color: $accent;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
 	font-size: 0;
+	color: $accent;
 	text-decoration: none;
 	&:hover {
 		color: $accent-active;
@@ -17,37 +19,35 @@
 			color: #616161;
 		}
 	}
+	.fa {
+		display: block;
+	}
 }
 .user .user__text {
 	display: block;
-	padding: rem(8.5px) 0;
-	padding-left: rem(48px);
-	padding-right: rem(30px);
+	padding: rem(2.5px) 0;
 	font-family: $font-base;
-	font-size: 18px;
-	line-height: 1;
+	font-size: rem(18px);
+	line-height: rem(30px);
 	font-weight: 700;
 	color: $accent;
 	white-space: nowrap;
 }
 .user	.flag {
-	position: absolute;
-	z-index: 30;
-	left: 10%;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 24px;
-	line-height: 1;
+	display: block;
+	font-size: rem(24px);
+	line-height: rem(30px);
 	font-weight: 400;
 }
 .user .caret {
-	position: absolute;
-	z-index: 30;
-	top: 50%;
-	right: 5%;
-	transform: translateY(-50%);
-	border-width: 6px;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0;
 	color: #616161;
+	font-size: rem(18px);
+	line-height: rem(30px);
+	border: 0;
 }
 .user .dropdown-menu {
 	min-width: auto;

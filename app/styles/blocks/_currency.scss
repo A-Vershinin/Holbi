@@ -3,8 +3,10 @@
 }
 
 .currency .dropdown-toggle {
-	display: block;
-	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
 	font-size: 0;
 	color: $accent;
 	text-decoration: none;
@@ -17,37 +19,35 @@
 			color: $accent;
 		}
 	}
+	.fa {
+		display: block;
+	}
 }
 .currency__text {
-	padding: rem(8.5px) 0;
-	padding-left: rem(40px);
-	padding-right: rem(30px);
-	white-space: nowrap;
-
-	font-size: rem(18px);
-	line-height: 1;
+	display: block;
+	padding: rem(2.5px) 0;
 	font-family: $font-base;
+	font-size: rem(18px);
+	line-height: rem(30px);
 	font-weight: 700;
-	color: $accent
+	color: $accent;
+	white-space: nowrap;
 }
 .currency .flag {
-	position: absolute;
-	z-index: 30;
-	left: 10%;
-	top: 50%;
-	transform: translateY(-50%);
+	display: block;
 	font-size: rem(24px);
-	line-height: 1;
+	line-height: rem(30px);
 	font-weight: 400;
 }
 .currency .caret {
-	position: absolute;
-	z-index: 30;
-	top: 50%;
-	right: 5%;
-	transform: translateY(-50%);
-	border-width: 6px;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0;
 	color: #616161;
+	font-size: rem(18px);
+	line-height: rem(30px);
+	border: 0;
 }
 .currency .dropdown-menu  {
 	min-width: auto;

@@ -47,7 +47,29 @@
 }
 .content__item {
   width: inter(780, 1580);
-  // width: 49.8%;
   margin-bottom: 20px;
+}
 
+@media screen and (max-width: 768px) {
+ .content__top {
+   display: block;
+   text-align: center;
+ }
+ .content__view-btn {
+   margin-bottom: 15px;
+ }
+ .content__list {
+   display: block;
+ }
+ .content__item {
+   width: 90%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+ }
+}
+@media screen and #{($phone-point-widths-des)} {
+  // .content__item {
+  //   width: 90%;
+  //   margin: 0 auto;
+  // }
 }

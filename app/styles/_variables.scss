@@ -52,14 +52,14 @@ $tablet-point-widths: "(min-width: 576px)";
 //Desktop//
 $desktop-point-widths-des: "(max-width: 1600px)";
 $laptop-point-widths-des: "(max-width: 1200px)";
-$tablet-point-widths-des: "(max-width: 767px)";
+$tablet-point-widths-des: "(max-width: 992px)";
 $phone-point-widths-des: "(max-width: 576px)";
 
 //макс-ширина на устройствах//
 $desktop-max-widths: 1580px;
 $laptop-max-widths: 1170px;
-$tablet-max-widths: 768px;
-$phone-max-widths: 480px;
+$tablet-max-widths: 950px;
+$phone-max-widths: 540px;
 
 //мин-ширина на устройствах//
 $desktop-min-widths: 1170px;

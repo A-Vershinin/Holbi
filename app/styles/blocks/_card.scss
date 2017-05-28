@@ -228,3 +228,20 @@
 		text-decoration: none;
 	}
 }
+
+@media screen and #{($phone-point-widths-des)} {
+	.card {
+		display: block;
+		padding: 5px;
+	}
+	.card__img {
+		width: 100%;
+		margin-bottom: 10px;
+		img {
+			margin: 0 auto;
+		}
+	}
+	.card__title {
+		text-align: center;
+	}
+}

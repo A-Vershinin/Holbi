@@ -100,11 +100,7 @@
 @media screen and #{($laptop-point-widths-des)} {
 
 }
-@media screen and (min-width: 768px) {
-  .collapse  {
-    display: block;
-  }
-}
+
 @media screen and #{($tablet-point-widths-des)} {
   .menu {
     padding: 0;
@@ -125,6 +121,9 @@
       text-align: left;
       background-color: $bg-1;
       background-color: transparent;
+    }
+    & .menu__icon {
+      display: none;
     }
     & .menu__collapse  {
       margin: 0;
@@ -147,6 +146,9 @@
         background-color: $accent-active;
       }
     }
+    .navbar-header {
+      float: none;
+    }
     .menu__icon .menu__link {
       position: absolute;
       z-index: 50;
@@ -156,44 +158,42 @@
     }
   }
 }
-
-
 @media screen and #{($phone-point-widths-des)} {
-  .menu__hamburger {
-    position: absolute;
-    top: -75px;
-    right: 0;
-  }
-  .menu {
-    & .menu__list {
-      background-color: $bg-1;
-    }
-  }
-  .menu .menu__hamburger {
-    display: inline-block;
-    margin-right: 0;
-    padding: 10px 5px;
-  }
-  .hamburger-box {
-    width: 44px;
-    height: 44px;
-    border: 2px solid rgba(0, 0, 0, .1);
-    border-radius: 50%;
-    .hamburger-inner {
-      width: 20px;
-      height: 3px;
-      margin-left: 10px;
-      bottom: 10px;
-      &::before, &::after {
-        width: 20px;
-        height: 3px;
-      }
-      &::before {
-        top: -8px;
-      }
-      &::after {
-        top: -16px;
-      }
-    }
-  }
+  // .menu__hamburger {
+  //   position: absolute;
+  //   top: -75px;
+  //   right: 0;
+  // }
+  // .menu {
+  //   & .menu__list {
+  //     background-color: $bg-1;
+  //   }
+  // }
+  // .menu .menu__hamburger {
+  //   display: inline-block;
+  //   margin-right: 0;
+  //   padding: 10px 5px;
+  // }
+  // .hamburger-box {
+  //   width: 44px;
+  //   height: 44px;
+  //   border: 2px solid rgba(0, 0, 0, .1);
+  //   border-radius: 50%;
+  //   .hamburger-inner {
+  //     width: 20px;
+  //     height: 3px;
+  //     margin-left: 10px;
+  //     bottom: 10px;
+  //     &::before, &::after {
+  //       width: 20px;
+  //       height: 3px;
+  //     }
+  //     &::before {
+  //       top: -8px;
+  //     }
+  //     &::after {
+  //       top: -16px;
+  //     }
+  //   }
+  // }
 }
