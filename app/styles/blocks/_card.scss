@@ -10,11 +10,17 @@
 .card__img {
 	flex: 1 1 auto;
 	display: block;
-	width: 440px;
+	width: 260px;
+	width: inter(260, 780);
 	text-decoration: none;
 	cursor: pointer;
+	img {
+		margin: 0 auto;
+	}
 }
 .card__desc {
+	width: 456px;
+	width: inter(456, 780);
 	flex: 1 1 auto;
 	font-size: rem(18px);
 	line-height: rem(24px);
@@ -228,20 +234,61 @@
 		text-decoration: none;
 	}
 }
+@media screen and #{($laptop-point-widths-des)} {
+	.card {
+		padding: rem(18px) rem(10px);
+	}
+	.card__img {
+		width: inter(350, 780);
+	}
+	.card__desc {
+		width: inter(350, 780);
+	}
+	.card__action {
+		display: block;
+	}
+	.card__number {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.card__btn {
+		display: block;
+		text-align: center;
+	}
+}
+@media screen and #{($tablet-point-widths-des)} {
+}
+@media screen and (max-width: 768px) {
+	.card__btn {
+		max-width: 132px;
+		margin: 0 auto;
+		padding: rem(7px) 0;
+	}
+}
 
 @media screen and #{($phone-point-widths-des)} {
 	.card {
 		display: block;
-		padding: 5px;
+		padding: rem(5px);
 	}
 	.card__img {
 		width: 100%;
-		margin-bottom: 10px;
+		margin-bottom: rem(10px);
 		img {
 			margin: 0 auto;
 		}
 	}
+	.card__desc {
+		width: 100%;
+	}
 	.card__title {
 		text-align: center;
+	}
+	.card__btn {
+
+		max-width: 220px;
+		margin: 0 auto;
+		padding: rem(10px) 0;
+		margin-bottom: 10px;
 	}
 }

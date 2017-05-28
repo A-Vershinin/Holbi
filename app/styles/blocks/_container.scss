@@ -1,6 +1,4 @@
 .container {
   @include container-fluid();
-  border-right: 2px solid red;
-  border-left: 2px solid red;
   box-sizing: border-box;
 }
